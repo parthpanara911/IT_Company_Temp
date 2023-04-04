@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ============================================
+                    COLORS
+============================================ */
+
+/* rgba(8, 106, 216, 0.2); 
+rgb(8, 106, 216);
+#7f7f7f;
+rgb(80, 76, 76);
+rgb(8, 106, 216); 
+#086AD8;
+*/
+
+:root {
+    --primary-color: rgb(8,106,216);
+    --backup-color:rgba(0, 0, 255, 0.1);
+    --seconadry-color: rgba(0, 0, 0, 0.5);
+    --sidebar-color:#343a40;
+    --ternary-color: #7f7f7f;
+    --similar-color:rgb(80, 76, 76);
+    --font-color:azure;
+}
+
+nav ul li #links{
+    background-color:  rgb(8, 106, 216);  
+}
+
+/* ======================================
+        Footer-Details CSS 
+====================================== */
+   
+#form-container{
+    margin-left: 270px;
+    position: relative;
+    top:15px;
+}
+
+/* ======================================
+        Dashboard CSS 
+====================================== */
+section .contact-part{
+    margin-left: 10px;
+    width:300px;
+    height: 150px;
+    border: var(--font-color);
+    border-style: solid;
+    border-radius: 15px;
+}
+section .contact-part .c-icon{
+    color: var(--sidebar-color);
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 30px;
+    background-color: var(--font-color);
+    position: relative;
+    top: 8px;
+    left:-6px;
+    display: inline-block;
+}
+section .contact-part span{
+    color: var(--font-color);
+    font-family:  'Poppins', sans-serif;
+    position: relative;
+    top: 7px;
+    left:17px;
+    font-size: 25px;
+    text-align: center;
+}
+section .contact-part p{
+    font-family:  'Poppins', sans-serif;
+    position: relative;
+    left:55px;
+    top: 3px;
+    color: var(--font-color);
+}

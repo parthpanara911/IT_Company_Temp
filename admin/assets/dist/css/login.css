@@ -1,0 +1,174 @@
+header nav .logo {
+    cursor: pointer;
+}
+
+header nav .logo span {
+    height: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+
+header nav .logo span.sys {
+    /* color: #00f; */
+    color: #086AD8;
+    cursor: pointer;
+}
+
+header nav ul li {
+    letter-spacing: 1px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li:hover {
+    background-color:#086AD8;
+}
+
+main form {
+    width: 90%;
+    max-width: 1000px;
+}
+
+main form label {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    animation: Sleft 1.25s 1;
+}
+
+main form input {
+    padding-left: 0;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #000;
+    border-radius: 0;
+    outline: 0;
+    transition: all 0.3s ease-in-out;
+    animation: Sup 1.5s 1;
+}
+
+main form input:focus {
+    padding-left: 10px;
+    border-bottom: 0;
+    background-color: rgba(0, 0, 255, 0.1);
+    border: 2px solid #086AD8;
+    border-radius: 0;
+    outline: 0;
+}
+
+header nav ul img {
+    display: none;
+    color: #fff;
+    height: 18px;
+}
+
+main button, a {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    transition: all 0.2s ease-in-out;
+    animation: Sup 1.5s 1;
+    cursor: pointer;
+}
+
+main button {
+    color: #fff;
+    background-color: #086AD8;
+    border: 2px solid #086AD8;
+    outline: 0;
+    border-radius: 0;
+}
+
+main a {
+    color: #086AD8;
+    border: 2px solid #086AD8;
+}
+
+main a:hover, button:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: rgba(0, 0, 250, 0.5);
+    transform: translateY(-7.5px);
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+main .unable_enter {
+    animation: Sleft 1.5s 1;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+main .sorry {
+    font-size: 75px;
+    font-weight: 600;
+    animation: Sdown 1.5s 1;
+}
+
+main form p {
+    color: #f00;
+    font-size: 20px;
+    margin-top: 0;
+    font-weight: 600;
+    animation: Sup 1.5s 1;
+}
+
+main form p::after {
+    content: "!";
+}
+
+@keyframes Sup {
+    0% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes Sdown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes Sleft {
+    0% {
+        transform: translateX(25%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 550px) {
+    header nav ul li {
+        display: none;
+    }
+
+    header nav ul img {
+        display: block;
+        color: #fff;
+    }
+}
